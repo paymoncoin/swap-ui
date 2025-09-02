@@ -7,7 +7,7 @@ import { nodePolyfills } from 'vite-plugin-node-polyfills'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss(), nodePolyfills()],
-  base: '/testnet-ui/',
+  base: '/swap-ui/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

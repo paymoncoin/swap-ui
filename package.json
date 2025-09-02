@@ -1,6 +1,6 @@
 {
-  "name": "paymon_ui",
-  "homepage": "https://paymoncoin.github.io/testnet-ui/",
+  "name": "swap_ui",
+  "homepage": "https://paymoncoin.github.io/swap-ui/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
