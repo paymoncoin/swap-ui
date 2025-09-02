@@ -7,7 +7,7 @@ export const ACTIVE_NETWORK: Network = "mainnet";
 // Addresses mapped by network
 export const PAYMON_MINTER_ADDRESS: Record<Network, string> = {
   mainnet: "EQA_Q9VUz3uvJUBEO3YeiRGFB7SjlHmU36F9XMc2_NTjiEUD",
-  testnet: "kQBPAqT-8JLRz7YWrZ2JPdSp4-y-L5DOoaCzLdX6oVkojAmn",
+  testnet: "kQC_JIVVHryhbpXYKuUHpS3APB7saNz3oXK1-OBrmrNKa78_",
 };
 
 export const USDT_MINTER_ADDRESS: Record<Network, string> = {
@@ -17,7 +17,7 @@ export const USDT_MINTER_ADDRESS: Record<Network, string> = {
 
 export const DEX_ADDRESS: Record<Network, string> = {
   mainnet: "EQDIkwXtd98PNiJFN3GoeaYX4DejoeE8H9TOj71z-3P6Tjg_",
-  testnet: "kQClHYBjcPTMfme3HkUPIfLarKVdHnufIrpbfkymaVpvCGBu",
+  testnet: "kQBy98-6zjTXgrOhZM6pUDEHPKOgNvKQ6Qu8HA3LaRbSB5rK",
 };
 
 // Helper functions
