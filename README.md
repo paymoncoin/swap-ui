@@ -1,70 +1,70 @@
-# وب اپلیکیشن پیمان
+# سورس کد صرافی غیرمتمرکز پیمان
 
-سورس کد وب اپلیکیشن پیمان به صورت عمومی منتشر می شود تا در صورتی که دسترسی به ربات تلگرامی برای شما امکان پذیر نباشد بتوانید وب اپلیکیشن را بر روی کامپیوتر خود اجرا نمایید.
-Currently, two official plugins are available:
+این وب‌اپلیکیشن برای دسترسی غیرمتمرکز به صرافی پیمان ساخته شده است.  
+در صورتی که به هر دلیلی دسترسی به ربات تلگرامی پیمان محدود یا قطع شود، کاربران می‌توانند این وب‌اپلیکیشن را دانلود کرده و به صورت آزاد روی سیستم خود اجرا کنند.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ⚡️ پیش‌نیازها
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [Node](https://nodejs.org) (version >= 22.x)
+- [Bun](https://bun.sh/) (مدیریت پکیج و اجرای پروژه)
+- مرورگر مدرن (مانند Chrome یا Firefox)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📥 نصب و راه‌اندازی
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+۱. ابتدا مخزن پروژه را کلون کنید:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+```bash
+git clone https://github.com/paymoncoin/swap-ui.git
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# ui-testnet
-# ui-testnet
+۲. وارد پوشه پروژه شوید:
+
+```bash
+cd paymon-webapp
+
+۳. پکیج‌ها را نصب کنید:
+
+```bash
+bun install
+
+۴. اجرای وب‌اپلیکیشن در حالت توسعه (Development):
+
+```bash
+bun run dev
+
+۵. سپس در مرورگر آدرس زیر را باز کنید:
+
+```bash
+http://localhost:5173
+
+## 🛠 ساختار پروژه
+
+src/ → سورس کد اصلی (کامپوننت‌ها، صفحات، و تنظیمات)
+
+public/ → فایل‌های استاتیک (تصاویر، آیکون‌ها، و ...)
+
+vite.config.ts → تنظیمات Vite
+
+tsconfig.json → تنظیمات TypeScript
+
+## 🤝 مشارکت در توسعه
+ما از همکاری شما برای بهبود این پروژه استقبال می‌کنیم 🚀
+
+راه‌های کمک شما:
+
+سورس کد را بررسی کنید.
+
+پیشنهادها و مشکلات (issues) خود را در بخش Issues
+ مطرح کنید.
+
+در صورت امکان، Pull Request بفرستید تا تغییرات شما بررسی و ادغام شوند.
+
+## 📜 مجوز (License)
+
+این پروژه تحت مجوز MIT منتشر شده است.
+استفاده، تغییر و انتشار آن آزاد است، تنها لطفاً به منبع (Paymon Project) اشاره کنید.
+
